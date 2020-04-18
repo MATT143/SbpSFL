@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pws</title>
+</head>
+<body>
+<h2>Provisioning Work Space</h2><br/>
+
+<form method="get" action="provision">{% csrf_token %}
+    <fieldset>
+        <input type="text" name="salesOrderNo" placeholder="SalesOrderNo" required="required"/>
+    </fieldset>
+    <input type="submit" value="PROVISION">
+</form>
+
+
+</body>
+</html>
